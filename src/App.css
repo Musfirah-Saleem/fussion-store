@@ -1,0 +1,163 @@
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #6baf8d;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.navbar-nav li a {
+  font-size: 17px;
+  /* color: #fff; */
+}
+.navbar-brand {
+  letter-spacing: 1.5px;
+  margin-right: 0px;
+}
+
+/* Card */
+.card {
+  background: #c8d8e4;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card img {
+  border-radius: 10px;
+}
+
+/* Product */
+.product img {
+  transition: all 0.5s ease;
+}
+.product img:hover {
+  transform: scale(1.1);
+}
+
+/* checkout */
+.check__out__main {
+  margin: 10px;
+}
+
+.check__out__inner {
+  background: #c8d8e4;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: none !important;
+  background-color: #fff;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.common__btn {
+  background: #52ab98;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.common__btn:hover {
+  background: #2b6777;
+  color: #fff !important;
+  transition: all 0.5s ease;
+}
+
+/* for navbar button */
+.common__btn1 {
+  background: #52ab98;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.common__btn1:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white !important;
+  transition: all 0.5s ease;
+}
+
+/* footer */
+.bg__bg {
+  background: #2b6777;
+}
+.bg__footer {
+  background: #f2f2f2;
+  margin-top: 20px;
+}
+.footer__text {
+  color: #2b6777;
+  font-size: 20px;
+}
+
+/* cart */
+.cart__bg {
+  background: #c8d8e4;
+  color: #2b6777 !important;
+}
+
+/* staric*/
+.staric {
+  color: red;
+}
+
+/* color for label */
+
+.label__label__clr {
+  color: #2b6777;
+  font-weight: bold;
+}
+
+/* contact Image */
+.contact__main {
+  background: #c8d8e4;
+  padding: 50px;
+  border-radius: 20px;
+}
+.contact__image {
+  width: 80%;
+  height: auto;
+}
+
+/* media query for contact use */
+@media only screen and (max-width: 600px) {
+  .contact__main {
+    padding: 50px 25px;
+    border-radius: 0px;
+  }
+}
